@@ -1,0 +1,19 @@
+{
+  "name": "cep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:pkg": "pkg index.js",
+    "build:nexe": "nexe -t x86 --build index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cep-promise": "^4.1.1",
+    "nexe": "^4.0.0-beta.19",
+    "pkg": "^5.5.1"
+  }
+}

@@ -1,8 +1,6 @@
 const fs = require('fs');
 const axios = require('axios');
 
-console.log(process.argv);
-
 var findCep = '';
 var retorno = '';
 
@@ -14,7 +12,15 @@ if (process.argv.length < 4) {
     retorno = process.argv[3];
 }
 
-axios.get('https://viacep.com.br/ws/' + findCep + '/json/')
+if (!findCep) {
+    findCep = '00000000';
+}
+
+if (!retorno) {
+    retorno = 'retorno.txt';
+}
+
+axios.get('http://viacep.com.br/ws/' + findCep + '/json/')
     .then(function (response) {
         return response.data
     })

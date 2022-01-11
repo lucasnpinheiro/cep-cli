@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:pkg": "pkg index.js",
-    "build:nexe": "nexe -t x86 --build index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:nexe": "nexe -t x86-8.0.0 --without-node-options --tls-max-v1",
+    "test": "rm -rf retorno.txt && node index.js 14031010 retorno.txt"
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,10 @@
+cep:14031-300
+logradouro:Rua Alfredo Condeixa
+complemento:até 1128/1129
+bairro:Jardim Marchesi
+localidade:Ribeirão Preto
+uf:SP
+ibge:3543402
+gia:5824
+ddd:16
+siafi:6969

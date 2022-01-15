@@ -20,7 +20,7 @@ if (!retorno) {
     retorno = 'retorno.txt';
 }
 
-axios.get('http://viacep.com.br/ws/' + findCep + '/json/')
+axios.get('https://viacep.com.br/ws/' + findCep + '/json/')
     .then(function (response) {
         return response.data
     })

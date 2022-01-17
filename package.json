@@ -4,16 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:pkg": "npx pkg -t win index.js",
-    "build:nexe": "nexe -t x86-14.9.0",
+    "build:pkg": "pkg index.js --options expose-gc -t win",
+    "build:nexe": "nexe index.js -t win",
     "test": "rm -rf retorno.txt && node index.js 14031010 retorno.txt"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
-    "cep-promise": "^4.1.1",
-    "nexe": "^4.0.0-beta.19",
-    "pkg": "^5.5.1"
+    "cep-promise": "^4.1.1"
   }
 }
